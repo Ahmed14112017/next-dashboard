@@ -6,44 +6,37 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
+    <main className="flex  min-h-screen flex-col p-6">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-        <div className="flex items-center justify-start p-6 md:w-3/5 md:px-28 md:py-12">
+        <div className="flex items-center justify-start md:w-3/5  md:py-12">
           <Image
-            src="/logo-image.png"
-            width={100}
-            height={100}
+            src="/Amgo-logo.png"
+            width={200}
+            height={200}
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
           />
           <Image
-            src="/logo-image.png"
-            width={50}
-            height={50}
+            src="/Amgo-logo.png"
+            width={100}
+            height={100}
             className="block md:hidden"
-            alt="Screenshots of the dashboard project showing desktop version"
+            alt="Screenshot of the dashboard project showing mobile version"
           />
         </div>
       </div>
-      <div className="flex flex-1 flex-col items-start justify-center">
-        <div className="w-80">
-          <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
-          >
-            <strong>Welcome to Acme.</strong> This is the example for the{" "}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
+      <div className="flex-1 flex items-center justify-center md:justify-start p-6">
+        <div className=" w-[50%] md:w-[25%] ">
+          <p className="mb-4">
+            <strong>wellcome to Acme. </strong>this is example for the Next.js
+            Learn course,brought to you by vercel
           </p>
-          <div>
-            <button className="flex items-center gap-2 bg-blue-500 px-4 py-2 rounded-3xl text-white">
-              login
-              <span>
-                <ArrowRightIcon className="size-6 " />
-              </span>
-            </button>
-          </div>
+          <Link
+            href={""}
+            className="bg-blue-500 text-white py-2 px-4 rounded-md"
+          >
+            Log in
+          </Link>
         </div>
       </div>
     </main>
